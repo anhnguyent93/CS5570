@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="94e247a5-296f-4914-9712-3c6f7e9af914" name="Default Changelist" comment="" />
+    <list default="true" id="94e247a5-296f-4914-9712-3c6f7e9af914" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/RandomNumberGeneratorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/RandomNumberGeneratorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,27 +26,27 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="iml" value="1" />
-          <entry key="java" value="4" />
+          <entry key="java" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="4" />
+          <entry key="JAVA" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="ft" value="114" />
           <entry key="iml" value="2" />
-          <entry key="java" value="294" />
+          <entry key="java" value="518" />
           <entry key="xml" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="IDEA_MODULE" value="2" />
-          <entry key="JAVA" value="294" />
+          <entry key="JAVA" value="518" />
           <entry key="VTL" value="114" />
           <entry key="XML" value="21" />
         </counts>
@@ -51,32 +56,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="16" selection-start-column="16" selection-end-column="16" />
-              <folding>
-                <element signature="e#63#64#0" expanded="true" />
-                <element signature="e#136#137#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/utils/RandomNumberGenerator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="9" column="50" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
+            <state relative-caret-position="92">
+              <caret line="4" column="53" selection-start-line="4" selection-start-column="53" selection-end-line="4" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -85,10 +68,19 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/utils/RandomNumberGeneratorTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="322">
-              <caret line="14" column="54" lean-forward="true" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
+              <caret line="14" column="88" lean-forward="true" selection-start-line="14" selection-start-column="88" selection-end-line="14" selection-end-column="88" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/utils/RandomNumberGenerator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="10" column="37" lean-forward="true" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -109,10 +101,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/CS5570 Project.iml" />
         <option value="$PROJECT_DIR$/src/test/java/MainTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/utils/RandomNumberGenerator.java" />
         <option value="$PROJECT_DIR$/src/test/java/utils/RandomNumberGeneratorTest.java" />
       </list>
@@ -183,6 +175,14 @@
               <item name="CS5570 Project" type="b2602c69:ProjectViewProjectNode" />
               <item name="CS5570" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CS5570 Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CS5570" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -211,7 +211,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538540125820" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538581377046" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -279,32 +279,44 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1538529651830</updated>
-      <workItem from="1538529660296" duration="3634000" />
+      <workItem from="1538529660296" duration="6957000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_CS5570_Project - 2018.10.02 at 23h 03m 04s.xml">
+    <history-entry file="All_in_CS5570_Project - 2018.10.03 at 10h 22m 26s.xml">
       <configuration name="All in CS5570 Project" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_CS5570_Project - 2018.10.02 at 23h 03m 41s.xml">
+    <history-entry file="All_in_CS5570_Project - 2018.10.03 at 10h 22m 28s.xml">
       <configuration name="All in CS5570 Project" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_CS5570_Project - 2018.10.02 at 23h 04m 57s.xml">
+    <history-entry file="All_in_CS5570_Project - 2018.10.03 at 10h 22m 30s.xml">
       <configuration name="All in CS5570 Project" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_CS5570_Project - 2018.10.02 at 23h 08m 22s.xml">
+    <history-entry file="All_in_CS5570_Project - 2018.10.03 at 10h 22m 33s.xml">
       <configuration name="All in CS5570 Project" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_CS5570_Project - 2018.10.02 at 23h 08m 44s.xml">
+    <history-entry file="All_in_CS5570_Project - 2018.10.03 at 10h 22m 36s.xml">
       <configuration name="All in CS5570 Project" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_CS5570_Project - 2018.10.02 at 23h 09m 09s.xml">
+    <history-entry file="All_in_CS5570_Project - 2018.10.03 at 10h 22m 39s.xml">
+      <configuration name="All in CS5570 Project" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_CS5570_Project - 2018.10.03 at 10h 26m 54s.xml">
+      <configuration name="All in CS5570 Project" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_CS5570_Project - 2018.10.03 at 10h 30m 19s.xml">
+      <configuration name="All in CS5570 Project" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_CS5570_Project - 2018.10.03 at 10h 30m 41s.xml">
+      <configuration name="All in CS5570 Project" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_CS5570_Project - 2018.10.03 at 10h 30m 55s.xml">
       <configuration name="All in CS5570 Project" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3634000" />
+    <option name="totallyTimeSpent" value="6957000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="0" />
@@ -365,17 +377,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="16" selection-start-column="16" selection-end-column="16" />
-          <folding>
-            <element signature="e#63#64#0" expanded="true" />
-            <element signature="e#136#137#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
@@ -383,17 +384,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="53" selection-start-line="4" selection-start-column="53" selection-end-line="4" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/utils/RandomNumberGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="50" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
+        <state relative-caret-position="230">
+          <caret line="10" column="37" lean-forward="true" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/utils/RandomNumberGeneratorTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
-          <caret line="14" column="54" lean-forward="true" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
+          <caret line="14" column="88" lean-forward="true" selection-start-line="14" selection-start-column="88" selection-end-line="14" selection-end-column="88" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

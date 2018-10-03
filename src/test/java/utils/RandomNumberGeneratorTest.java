@@ -9,10 +9,12 @@ import static org.junit.Assert.*;
  */
 public class RandomNumberGeneratorTest {
     @Test
-    public void testToSeeIfRandomNumbersGeneratedReturnNumbersBetweenOneAndFour () {
+    public void testToSeeIfRandomNumbersGeneratedReturnNumbersBetweenOneAndFour100Times () {
         RandomNumberGenerator randomNumberGenerator = new RandomNumberGenerator();
-        int randomNumber = randomNumberGenerator.randomNumberInRangeInclusive(1, 4);
-        assert(randomNumber >=1 && randomNumber <= 4);
+        for(int i = 0; i < 100; i++) {
+            int randomNumber = randomNumberGenerator.randomNumberInRangeInclusive(1, 4);
+            assert (randomNumber >= 1 && randomNumber <= 4);
+        }
     }
 
 }
