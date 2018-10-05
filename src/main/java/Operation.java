@@ -22,7 +22,10 @@ public class Operation {
 
     @Override
     public String toString() {
-        return (Character.toString(operation) + txnID.toString() + "[" + dataItem.toString() + "]");
+        if (dataItem != null)
+            return (Character.toString(operation) + txnID.toString() + "[" + dataItem.toString() + "]");
+        else
+            return (Character.toString(operation) + txnID.toString());
     }
 
     public Integer getTxnID() {
