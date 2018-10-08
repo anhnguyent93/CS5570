@@ -11,12 +11,11 @@ import java.util.Set;
 public class TransactionCreatorTest {
     @Test
     public void testTransactionIDGeneratorForRetrievingFourUniqueIDsFromAPossibleMaxOf100() {
-        TransactionCreator transactionCreator = new TransactionCreator();
         int numOfTransactions = 4;
         int maxNumOfPossibleTransactions = 100;
 
         for(int i=0; i<1000; i++) {
-            Integer[] transactionIDs = transactionCreator.transactionIDGenerator(numOfTransactions, maxNumOfPossibleTransactions);
+            Integer[] transactionIDs = TransactionCreator.transactionIDGenerator(numOfTransactions, maxNumOfPossibleTransactions);
 
             Set<Integer> mySet = new HashSet<>(Arrays.asList(transactionIDs));
             assert(mySet.size() == numOfTransactions); // The number of unique transactions is equal to the request
@@ -30,9 +29,8 @@ public class TransactionCreatorTest {
     public void testCreateTransactionDataItemsWithMaxDataItemPerTransactionOf4And1000PossibleDataItems() {
         int maxDataItemsForTransaction = 4;
         int maxPossibleDataItems = 1000;
-        TransactionCreator transactionCreator = new TransactionCreator();
-        Integer[] transactionIDs = transactionCreator.transactionIDGenerator(4, 100);
-        Map<Integer, Integer[]> transactionsDataItems = transactionCreator.createTransactionsAndDataItems(
+        Integer[] transactionIDs = TransactionCreator.transactionIDGenerator(4, 100);
+        Map<Integer, Integer[]> transactionsDataItems = TransactionCreator.createTransactionsAndDataItems(
                 transactionIDs, maxDataItemsForTransaction, maxPossibleDataItems);
 
         for(Integer transactionID: transactionsDataItems.keySet()) {
