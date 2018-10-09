@@ -39,8 +39,8 @@ public class History {
         }
     }
 
-    public ArrayList<Operation> getHistory() {
-        return history;
-    }
+    public ArrayList<Operation> getHistory() { return history; }
+
+    public ArrayList<Transaction> getTxnsList() { return txnsList; }
 
 }

@@ -27,7 +27,7 @@ public class HistoryTest {
         for (Operation op: testHistory.getHistory()) {
             testOutput.append(op.toString());
         }
-        System.out.println("Below is the history:");
+        System.out.println("HistoryTest:: Below is the history:");
         System.out.println(testOutput.toString());
 
         assert (testHistory.getHistory().size() == testSumOfOpsInTxns);

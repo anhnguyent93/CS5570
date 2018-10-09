@@ -16,8 +16,10 @@ public class TransactionTest {
         testTxn.createNewRandomHistory();
         ArrayList<Operation> testTxnArrListOp = testTxn.getTxnHist();
 
+        System.out.println("TransactionTest:: Below are the Transaction Operations:");
+
         for (Operation op: testTxnArrListOp) {
-            System.out.println(op.toString());
+            System.out.print(op.toString());
         }
     }
 }
