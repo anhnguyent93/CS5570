@@ -26,17 +26,17 @@ public class TransactionCreatorTest {
     }
 
     @Test
-    public void testCreateTransactionDataItemsWithMaxDataItemPerTransactionOf4And1000PossibleDataItems() {
-        int maxDataItemsForTransaction = 4;
-        int maxPossibleDataItems = 1000;
-        Integer[] transactionIDs = TransactionCreator.transactionIDGenerator(4, 100);
-        Map<Integer, Integer[]> transactionsDataItems = TransactionCreator.createTransactionsAndDataItems(
-                transactionIDs, maxDataItemsForTransaction, maxPossibleDataItems);
+    public void testCreateTransactionWithDataItems() {
+        int testTxnID = 1;
+        int testTxnDataItemCount = 4;
+        int testMaxPossibleDataItems = 1000;
+        
+        Transaction testTxn = TransactionCreator.createTransactionWithDataItems(
+                testTxnID, testTxnDataItemCount, testMaxPossibleDataItems);
 
-        for(Integer transactionID: transactionsDataItems.keySet()) {
-            Integer[] dataItems = transactionsDataItems.get(transactionID);
-            assert (dataItems.length >= 1 && dataItems.length <= maxDataItemsForTransaction);
-        }
+        assert testTxn.getDataItems().length == testTxnDataItemCount;
+        assert testTxn.getTxnID() == testTxnID;
+
     }
 
 }

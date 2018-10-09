@@ -27,9 +27,9 @@ public class OperationsCreator {
             char op = randomReadOrWrite();
             if (op == 'r') {
                 dataItemOps[0] = new Operation(txnID, op, dataItem);
-                dataItemOps[1] = new Operation(txnID, 'c', dataItem);
+                dataItemOps[1] = new Operation(txnID, 'w', dataItem);
             }
-            else if (op == 'c') {
+            else if (op == 'w') {
                 dataItemOps[0] = new Operation(txnID, op, dataItem);
                 dataItemOps[1] = new Operation(txnID, 'r', dataItem);
             }

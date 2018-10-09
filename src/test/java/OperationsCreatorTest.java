@@ -20,7 +20,7 @@ public class OperationsCreatorTest {
         if (testOperation.getOperation() == 'r') {
             assert (testOperation.toString().equals(testStringR));
         }
-        else
+        else if (testOperation.getOperation() == 'w')
             assert (testOperation.toString().equals(testStringW));
     }
 
@@ -36,7 +36,7 @@ public class OperationsCreatorTest {
         if (testOperation.getOperation() == 'a') {
             assert (testOperation.toString().equals(testStringA));
         }
-        else
+        else if (testOperation.getOperation() == 'c')
             assert (testOperation.toString().equals(testStringC));
     }
 

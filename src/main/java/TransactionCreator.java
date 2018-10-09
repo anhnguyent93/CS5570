@@ -30,31 +30,27 @@ public class TransactionCreator {
      * Randomly assign number of data items to the transaction and the data items
      * Return Map of transactionIDs as key and their value as array of data items
      */
-    public static Map<Integer, Integer[]> createTransactionsAndDataItems(
-            Integer[] transactionIDs, int maxNumDataItemPerTransaction, int maxPossibleDataItemIDs) {
+    public static Transaction createTransactionWithDataItems(
+            Integer txnID, int numDataItemsForTransaction, int maxPossibleDataItemIDs) {
 
-        Map<Integer, Integer[]> transactionsAndDataItems = new HashMap<>();
+        if (numDataItemsForTransaction > maxPossibleDataItemIDs) {
+            throw new IllegalArgumentException("Number of Data Items for Transaction must be equal to " +
+                    "or lower than the maximum possible number of data item IDs");
+        }
 
         // Possible data item ids
         ArrayList<Integer> dataItemIDs = new ArrayList<>();
         for (int i=1; i<= maxPossibleDataItemIDs; i++) {
             dataItemIDs.add(i);
         }
+        //Randomize the possible data item ids for transaction
+        Collections.shuffle(dataItemIDs);
 
-        for (int transactionID : transactionIDs) {
-            int dataItemCount = RandomNumberGenerator.randomNumberInRangeInclusive(1, maxNumDataItemPerTransaction);
+        List<Integer> dataItemsForTrxn = dataItemIDs.subList(0, numDataItemsForTransaction);
 
-            //Randomize the possible data item ids
-            Collections.shuffle(dataItemIDs);
+        Integer[] txnDataItems = dataItemsForTrxn.toArray(new Integer[numDataItemsForTransaction]);
 
-            List<Integer> dataItemsForTrxn = dataItemIDs.subList(0, dataItemCount);
-
-            Integer[] txnDataItems = dataItemsForTrxn.toArray(new Integer[0]);
-
-            transactionsAndDataItems.put(transactionID, txnDataItems);
-        }
-
-        return transactionsAndDataItems;
+        return (new Transaction(txnID, txnDataItems));
     }
 
 }

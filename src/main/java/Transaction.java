@@ -8,15 +8,27 @@ import java.util.List;
  */
 public class Transaction {
     private Integer txnID;
-    private Integer[] dataItems = null;
-    private ArrayList<Operation> txnHist;
+    private Integer[] dataItems;
+    private ArrayList<Operation> txnHist = new ArrayList<>();
 
-    public void createRandomHistory() {
+    public Transaction(Integer txnID, Integer[] dataItems) {
+        this.txnID = txnID;
+        this.dataItems = dataItems;
+    }
+
+    public void createNewRandomHistory() {
+        this.txnHist.clear();
         List<Integer> randomDataItems = Arrays.asList(dataItems);
-        Collections.shuffle(randomDataItems);
         for (Integer dataItem : randomDataItems) {
-
+            Operation[] dataItemOps = OperationsCreator.createRandOpsOnDataItem(txnID, dataItem, 2);
+            this.txnHist.addAll(Arrays.asList(dataItemOps));
         }
+        Collections.shuffle(txnHist);
+        this.txnHist.add(OperationsCreator.createAbortOrCommit(txnID));
+    }
+
+    public ArrayList<Operation> getTxnHist() {
+        return txnHist;
     }
 
 
