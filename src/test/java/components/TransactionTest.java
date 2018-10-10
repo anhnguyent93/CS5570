@@ -1,8 +1,8 @@
+package components;
+
 import org.junit.Test;
 
 import java.util.ArrayList;
-
-import static org.junit.Assert.*;
 
 /**
  * Created by DJ Yuhn on 10/8/2018
@@ -16,7 +16,7 @@ public class TransactionTest {
         testTxn.createNewRandomHistory();
         ArrayList<Operation> testTxnArrListOp = testTxn.getTxnHist();
 
-        System.out.println("TransactionTest:: Below are the Transaction Operations:");
+        System.out.println("components.TransactionTest:: Below are the components.Transaction Operations:");
 
         for (Operation op: testTxnArrListOp) {
             System.out.print(op.toString());

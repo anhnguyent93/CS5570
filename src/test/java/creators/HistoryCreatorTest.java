@@ -1,8 +1,11 @@
+package creators;
+
+import components.History;
+import components.Operation;
+import components.Transaction;
 import org.junit.Test;
 
 import java.util.ArrayList;
-
-import static org.junit.Assert.*;
 
 /**
  * Created by DJ Yuhn on 10/9/2018

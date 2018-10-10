@@ -1,6 +1,6 @@
-import org.junit.Test;
+package components;
 
-import static org.junit.Assert.*;
+import org.junit.Test;
 
 /**
  * Created by DJ Yuhn on 10/5/2018

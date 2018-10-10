@@ -1,6 +1,10 @@
-import utils.RandomNumberGenerator;
+package creators;
 
-import java.util.*;
+import components.Transaction;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 /**
  * Created by DJ Yuhn on 10/3/2018
@@ -34,7 +38,7 @@ public class TransactionCreator {
             Integer txnID, int numDataItemsForTransaction, int maxPossibleDataItemIDs) {
 
         if (numDataItemsForTransaction > maxPossibleDataItemIDs) {
-            throw new IllegalArgumentException("Number of Data Items for Transaction must be equal to " +
+            throw new IllegalArgumentException("Number of Data Items for components.Transaction must be equal to " +
                     "or lower than the maximum possible number of data item IDs");
         }
 
