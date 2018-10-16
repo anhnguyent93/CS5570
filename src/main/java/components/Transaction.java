@@ -2,27 +2,30 @@ package components;
 
 import creators.OperationsCreator;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 /**
  * Created by DJ Yuhn on 10/5/2018
  */
 public class Transaction {
     private Integer txnID;
-    private Integer[] dataItems;
+    private HashSet<Integer> dataItems;
     private ArrayList<Operation> txnHist = new ArrayList<>();
 
-    public Transaction(Integer txnID, Integer[] dataItems) {
+    public Transaction(Integer txnID, HashSet<Integer> dataItems) {
         this.txnID = txnID;
         this.dataItems = dataItems;
     }
 
+    public Transaction(Integer txnID, HashSet<Integer> dataItems, ArrayList<Operation> txnHist) {
+        this.txnID = txnID;
+        this.dataItems = dataItems;
+
+    }
+
     public void createNewRandomHistory() {
         this.txnHist.clear();
-        List<Integer> randomDataItems = Arrays.asList(dataItems);
+        List<Integer> randomDataItems = new ArrayList<>(this.dataItems);
         for (Integer dataItem : randomDataItems) {
             Operation[] dataItemOps = OperationsCreator.createRandOpsOnDataItem(txnID, dataItem, 2);
             this.txnHist.addAll(Arrays.asList(dataItemOps));
@@ -35,6 +38,9 @@ public class Transaction {
         return txnHist;
     }
 
+    public void setTxnHist(ArrayList<Operation> newHist) {
+        this.txnHist = newHist;
+    }
 
     // Getters and Setters
 
@@ -46,11 +52,11 @@ public class Transaction {
         this.txnID = txnID;
     }
 
-    public Integer[] getDataItems() {
+    public HashSet<Integer> getDataItems() {
         return dataItems;
     }
 
-    public void setDataItems(Integer[] dataItems) {
+    public void setDataItems(HashSet<Integer> dataItems) {
         this.dataItems = dataItems;
     }
 
