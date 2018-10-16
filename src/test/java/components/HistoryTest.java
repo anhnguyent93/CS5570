@@ -1,8 +1,9 @@
+package components;
+
+import creators.TransactionCreator;
 import org.junit.Test;
 
 import java.util.ArrayList;
-
-import static org.junit.Assert.*;
 
 /**
  * Created by DJ Yuhn on 10/8/2018
@@ -27,7 +28,7 @@ public class HistoryTest {
         for (Operation op: testHistory.getHistory()) {
             testOutput.append(op.toString());
         }
-        System.out.println("HistoryTest:: Below is the history:");
+        System.out.println("components.HistoryTest:: Below is the history:");
         System.out.println(testOutput.toString());
 
         assert (testHistory.getHistory().size() == testSumOfOpsInTxns);

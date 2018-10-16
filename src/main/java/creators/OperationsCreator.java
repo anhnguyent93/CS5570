@@ -1,3 +1,6 @@
+package creators;
+
+import components.Operation;
 import org.jetbrains.annotations.NotNull;
 import utils.RandomNumberGenerator;
 
@@ -58,5 +61,25 @@ public class OperationsCreator {
             return 'a';
         else
             return 'c';
+    }
+
+    public static Operation createCommit(Integer txnID) {
+        char op = 'c';
+        return new Operation(txnID, op);
+    }
+
+    public static Operation createAbort(Integer txnID) {
+        char op = 'a';
+        return new Operation(txnID, op);
+    }
+
+    public static Operation createRead(Integer txnID, Integer dataItem) {
+        char op = 'r';
+        return new Operation(txnID, op, dataItem);
+    }
+
+    public static Operation createWrite(Integer txnID, Integer dataItem) {
+        char op = 'w';
+        return new Operation(txnID, op, dataItem);
     }
 }
