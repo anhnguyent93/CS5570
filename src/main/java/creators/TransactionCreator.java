@@ -1,9 +1,11 @@
 package creators;
 
+import components.Operation;
 import components.Transaction;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashSet;
 import java.util.List;
 
 /**
@@ -52,7 +54,7 @@ public class TransactionCreator {
 
         List<Integer> dataItemsForTrxn = dataItemIDs.subList(0, numDataItemsForTransaction);
 
-        Integer[] txnDataItems = dataItemsForTrxn.toArray(new Integer[numDataItemsForTransaction]);
+        HashSet<Integer> txnDataItems = new HashSet<>(dataItemsForTrxn);
 
         return (new Transaction(txnID, txnDataItems));
     }

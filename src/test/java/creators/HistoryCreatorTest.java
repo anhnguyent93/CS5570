@@ -26,7 +26,7 @@ public class HistoryCreatorTest {
         assert testHistTxns.size() == 2;
 
         for (Transaction txn: testHistTxns) {
-            assert txn.getDataItems().length == 2;
+            assert txn.getDataItems().size() == 2;
         }
     }
 
