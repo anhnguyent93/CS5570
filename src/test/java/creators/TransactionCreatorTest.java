@@ -36,7 +36,7 @@ public class TransactionCreatorTest {
         Transaction testTxn = TransactionCreator.createTransactionWithDataItems(
                 testTxnID, testTxnDataItemCount, testMaxPossibleDataItems);
 
-        assert testTxn.getDataItems().length == testTxnDataItemCount;
+        assert testTxn.getDataItems().size() == testTxnDataItemCount;
         assert testTxn.getTxnID() == testTxnID;
 
     }
