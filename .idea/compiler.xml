@@ -9,6 +9,11 @@
         <module name="CS5570 Project" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="8" />
+    <bytecodeTargetLevel target="10" />
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="CS5570 Project" options="" />
+    </option>
   </component>
 </project>

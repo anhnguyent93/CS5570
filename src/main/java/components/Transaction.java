@@ -18,9 +18,11 @@ public class Transaction {
     }
 
     public Transaction(Integer txnID, HashSet<Integer> dataItems, ArrayList<Operation> txnHist) {
-        this.txnID = txnID;
-        this.dataItems = dataItems;
-
+        if(verifyAcceptableHist(dataItems, txnHist)) {
+            this.txnID = txnID;
+            this.dataItems = dataItems;
+            this.txnHist = txnHist;
+        }
     }
 
     public void createNewRandomHistory() {
@@ -58,6 +60,23 @@ public class Transaction {
 
     public void setDataItems(HashSet<Integer> dataItems) {
         this.dataItems = dataItems;
+    }
+
+    private boolean verifyAcceptableHist(HashSet<Integer> dataItems, ArrayList<Operation> txnHist) {
+        boolean hasAbortOrCommit = false;
+        for (Operation op:txnHist) {
+            if (!dataItems.contains(op.getDataItem()))
+                throw new IllegalArgumentException("An operation in the list contains data item " + op.getDataItem() + " not found in the Hash Set");
+            else if (op.getOperation() == 'c' || op.getOperation() == 'a') {
+                if (hasAbortOrCommit)
+                    throw new IllegalArgumentException("There are multiple aborts or commits in the transaction history");
+                else
+                    hasAbortOrCommit = true;
+            }
+        }
+
+        // If the transaction has an abort or commit and passed the above, return true;
+        return hasAbortOrCommit;
     }
 
 }
