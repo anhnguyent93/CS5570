@@ -59,8 +59,8 @@ public class TransactionCreator {
         return (new Transaction(txnID, txnDataItems));
     }
 
-    public static Transaction createCustomTransaction(Integer txnID, HashSet<Integer> dataItems, ArrayList<Operation> txnHist) {
-        return (new Transaction(txnID, dataItems, txnHist));
+    public static Transaction createCustomTransaction(Integer txnID, ArrayList<Operation> txnHist) {
+        return (new Transaction(txnID, txnHist));
     }
 
 }

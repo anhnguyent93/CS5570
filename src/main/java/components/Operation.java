@@ -12,6 +12,8 @@ public class Operation {
         this.txnID = txnID;
         if (op == 'c' || op == 'a')
             this.operation = op;
+        else
+            throw new IllegalArgumentException("This operation must be an 'a' or a 'c'.");
         this.dataItem = null;
     }
 
@@ -19,6 +21,9 @@ public class Operation {
         this.txnID = txnID;
         if (op == 'r' || op == 'w')
             this.operation = op;
+        else
+            throw new IllegalArgumentException("This operation must be a 'r' or a 'w'.");
+
         this.dataItem = dataItem;
     }
 
@@ -42,15 +47,39 @@ public class Operation {
         return dataItem;
     }
 
-    public void setDataItem(Integer dataItem) {
-        this.dataItem = dataItem;
-    }
-
     public char getOperation() {
         return operation;
     }
 
     public void setOperation(char operation) {
-        this.operation = operation;
+        if (validAbortCommit(operation)) {
+            this.operation = operation;
+            this.dataItem = null;
+        }
+    }
+
+    public void setOperation(char operation, Integer dataItem) {
+        if (validReadWrite(operation)) {
+            this.operation = operation;
+            this.dataItem = dataItem;
+        }
+    }
+
+    private static Boolean validReadWrite(char op) {
+        char[] opList = {'r', 'w'};
+        for (char opL:opList) {
+            if (opL == op)
+                return true;
+        }
+        return false;
+    }
+
+    private static Boolean validAbortCommit(char op) {
+        char[] opList = {'a', 'c'};
+        for (char opL:opList) {
+            if (opL == op)
+                return true;
+        }
+        return false;
     }
 }

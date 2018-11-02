@@ -11,6 +11,11 @@ public class History {
 
     public History(ArrayList<Transaction> txnsList) {
         this.txnsList = txnsList;
+        createRandomHistory();
+    }
+    public History(ArrayList<Transaction> txnsList, ArrayList<Operation> opsList) {
+        this.txnsList = txnsList;
+        this.history = opsList;
     }
 
     public void createRandomHistory() {
