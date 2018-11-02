@@ -2,11 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94e247a5-296f-4914-9712-3c6f7e9af914" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/components/History.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/components/History.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/components/Operation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/components/Operation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/components/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/components/Transaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/creators/HistoryCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/creators/HistoryCreator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/creators/TransactionCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/creators/TransactionCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/components/TransactionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/components/TransactionTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/creators/HistoryCreatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/creators/HistoryCreatorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/creators/TransactionCreatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/creators/TransactionCreatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/RandomNumberGeneratorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/RandomNumberGeneratorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/components/History.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/components/History.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/components/Operation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/components/Operation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/components/Transaction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/components/Transaction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/creators/HistoryCreator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/creators/HistoryCreator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/creators/TransactionCreator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/creators/TransactionCreator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/creators/HistoryCreatorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/creators/HistoryCreatorTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -20,48 +29,56 @@
     <session id="1023934202">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="11" />
           <entry key="project.open.time.13" value="2" />
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.19" value="1" />
+          <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.24" value="1" />
-          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.3" value="3" />
           <entry key="project.open.time.30" value="1" />
           <entry key="project.open.time.42" value="1" />
-          <entry key="project.opened" value="9" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.opened" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="History" value="1" />
           <entry key="JAVA/" value="3" />
           <entry key="JAVA/HistoryCreator" value="1" />
           <entry key="JavaScript-modules-diagram/C:/dev/CS5570/src/main/java" value="1" />
-          <entry key="iml" value="1" />
-          <entry key="java" value="110" />
+          <entry key="Operation" value="1" />
+          <entry key="Transaction" value="1" />
+          <entry key="fxml" value="1" />
+          <entry key="iml" value="4" />
+          <entry key="java" value="151" />
+          <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="110" />
-          <entry key="UML" value="5" />
+          <entry key="IDEA_MODULE" value="4" />
+          <entry key="JAVA" value="151" />
+          <entry key="UML" value="8" />
+          <entry key="XML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="ft" value="114" />
           <entry key="iml" value="2" />
-          <entry key="java" value="16975" />
-          <entry key="xml" value="21" />
+          <entry key="java" value="23536" />
+          <entry key="xml" value="52" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="IDEA_MODULE" value="2" />
-          <entry key="JAVA" value="16975" />
+          <entry key="JAVA" value="23536" />
           <entry key="VTL" value="114" />
-          <entry key="XML" value="21" />
+          <entry key="XML" value="52" />
         </counts>
       </usages-collector>
     </session>
@@ -69,31 +86,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/components/History.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+            <state relative-caret-position="52">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/creators/HistoryCreator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="156">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/components/HistoryTest.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/creators/HistoryCreatorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="598">
-              <caret line="26" column="42" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/creators/TransactionCreator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
-              <caret line="61" column="6" selection-start-line="61" selection-start-column="6" selection-end-line="63" selection-end-column="7" />
+            <state relative-caret-position="-74">
+              <caret line="37" column="56" lean-forward="true" selection-start-line="37" selection-start-column="56" selection-end-line="37" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -104,55 +118,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/components/Transaction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="62" column="6" lean-forward="true" selection-start-line="62" selection-start-column="6" selection-end-line="72" selection-end-column="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1103#1104#0" expanded="true" />
-                <element signature="e#1135#1136#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/creators/TransactionCreatorTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="38" column="44" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/analyzers/ACAAnalyzer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/components/TransactionTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/creators/HistoryCreatorTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
+            <state relative-caret-position="273">
+              <caret line="68" column="17" selection-start-line="68" selection-start-column="17" selection-end-line="68" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -166,6 +133,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit4 Test Class" />
+        <option value="JavaFXApplication" />
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -175,7 +144,11 @@
       <find>maxNumDataItemP</find>
       <find>maxNumDataIt</find>
       <find>txns</find>
+      <find>HashMap</find>
     </findStrings>
+    <dirStrings>
+      <dir>C:\dev\CS5570</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -185,7 +158,6 @@
       <list>
         <option value="$PROJECT_DIR$/CS5570 Project.iml" />
         <option value="$PROJECT_DIR$/src/test/java/MainTest.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/src/test/java/utils/RandomNumberGeneratorTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/DataItem.java" />
@@ -204,16 +176,30 @@
         <option value="$PROJECT_DIR$/src/test/java/TransactionTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/HistoryCreatorTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/analyzers/ACAAnalyzer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/creators/HistoryCreator.java" />
         <option value="$PROJECT_DIR$/src/main/java/analyzers/ACAAnalyzer.java" />
         <option value="$PROJECT_DIR$/src/test/java/components/OperationTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/creators/OperationsCreatorTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/creators/OperationsCreator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/creators/TransactionCreator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/components/Transaction.java" />
         <option value="$PROJECT_DIR$/src/test/java/creators/TransactionCreatorTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/components/TransactionTest.java" />
+        <option value="$PROJECT_DIR$/src/main/javafx/Controller.java" />
+        <option value="$PROJECT_DIR$/src/main/javafx/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/gui/Controller.java" />
+        <option value="$PROJECT_DIR$/src/main/gui/Main.java" />
+        <option value="$PROJECT_DIR$/src/gui/sample/Controller.java" />
+        <option value="$PROJECT_DIR$/src/main/javafx/main.java" />
+        <option value="$PROJECT_DIR$/src/main/javafx/MainGUI.java" />
+        <option value="$PROJECT_DIR$/src/main/java/MainGUI.java" />
+        <option value="$PROJECT_DIR$/src/main/java/main/MainGUI.java" />
+        <option value="$PROJECT_DIR$/src/main/java/main/home.fxml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/components/Operation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/creators/TransactionCreator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/exceptions/HistoryCreationException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/components/History.java" />
+        <option value="$PROJECT_DIR$/src/main/java/components/Transaction.java" />
         <option value="$PROJECT_DIR$/src/test/java/creators/HistoryCreatorTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/creators/HistoryCreator.java" />
       </list>
     </option>
   </component>
@@ -237,6 +223,11 @@
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="cs5570-project" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="cs5570-project" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
       </expand>
       <select />
     </treeState>
@@ -244,16 +235,17 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="784" />
+    <option name="width" value="1386" />
+    <option name="height" value="788" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -285,14 +277,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="analyzers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CS5570 Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CS5570" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -331,26 +315,17 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="creators" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CS5570 Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CS5570" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539710192030" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541138069176" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -359,12 +334,17 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.uml" />
+    <property name="settings.editor.selected.configurable" value="preferences.JavaFX" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="creators" />
       <recent name="" />
       <recent name="utils" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\dev\CS5570\src\main\javafx" />
+      <recent name="C:\dev\CS5570\src\main" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="creators" />
@@ -372,6 +352,10 @@
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\dev\CS5570\src\gui" />
+      <recent name="C:\dev\CS5570\src\main" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -387,9 +371,28 @@
     </option>
   </component>
   <component name="RunManager" selected="JUnit.All in CS5570 Project">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+    <configuration name="MainGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="10" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="main.MainGUI" />
       <module name="CS5570 Project" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All Features in: test" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="3" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="CS5570 Project" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm3SMFormatter" />
+      <option name="SUGGESTED_NAME" value="All Features in: test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -402,24 +405,50 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HistoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HistoryCreatorTest.testIfCustomHistoryCreatorCreatesProperHistoryForTwoTransactionsContainingCommits" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CS5570 Project" />
-      <option name="PACKAGE_NAME" value="components" />
-      <option name="MAIN_CLASS_NAME" value="components.HistoryTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="creators.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="creators" />
+      <option name="MAIN_CLASS_NAME" value="creators.HistoryCreatorTest" />
+      <option name="METHOD_NAME" value="testIfCustomHistoryCreatorCreatesProperHistoryForTwoTransactionsContainingCommits" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="creators in CS5570 Project" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CS5570 Project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="creators.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="creators" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.MainGUI" />
+      <item itemvalue="Cucumber java.All Features in: test" />
+      <item itemvalue="JUnit.creators in CS5570 Project" />
+      <item itemvalue="JUnit.HistoryCreatorTest.testIfCustomHistoryCreatorCreatesProperHistoryForTwoTransactionsContainingCommits" />
       <item itemvalue="JUnit.All in CS5570 Project" />
-      <item itemvalue="JUnit.HistoryTest" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.All in CS5570 Project" />
-        <item itemvalue="JUnit.HistoryTest" />
-        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.creators in CS5570 Project" />
+        <item itemvalue="Cucumber java.All Features in: test" />
+        <item itemvalue="JUnit.HistoryCreatorTest.testIfCustomHistoryCreatorCreatesProperHistoryForTwoTransactionsContainingCommits" />
+        <item itemvalue="Application.MainGUI" />
       </list>
     </recent_temporary>
   </component>
@@ -441,66 +470,69 @@
       <workItem from="1539102283336" duration="3885000" />
       <workItem from="1539111819915" duration="314000" />
       <workItem from="1539112181885" duration="3707000" />
-      <workItem from="1539702462277" duration="4306000" />
+      <workItem from="1539702462277" duration="6772000" />
+      <workItem from="1540920154577" duration="2081000" />
+      <workItem from="1540923059377" duration="363000" />
+      <workItem from="1540948597783" duration="5638000" />
+      <workItem from="1541124061369" duration="13329000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_CS5570_Project - 2018.10.09 at 12h 01m 21s.xml">
+    <history-entry file="HistoryCreatorTest_testIfCustomHistoryCreatorCreatesProperHistoryForTwoTransactionsContainingCommits - 2018.11.02 at 00h 46m 45s.xml">
+      <configuration name="HistoryCreatorTest.testIfCustomHistoryCreatorCreatesProperHistoryForTwoTransactionsContainingCommits" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HistoryCreatorTest_testIfCustomHistoryCreatorCreatesProperHistoryForTwoTransactionsContainingCommits - 2018.11.02 at 00h 47m 01s.xml">
+      <configuration name="HistoryCreatorTest.testIfCustomHistoryCreatorCreatesProperHistoryForTwoTransactionsContainingCommits" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HistoryCreatorTest_testIfCustomHistoryCreatorCreatesProperHistoryForTwoTransactionsContainingCommits - 2018.11.02 at 00h 47m 18s.xml">
+      <configuration name="HistoryCreatorTest.testIfCustomHistoryCreatorCreatesProperHistoryForTwoTransactionsContainingCommits" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HistoryCreatorTest_testIfCustomHistoryCreatorCreatesProperHistoryForTwoTransactionsContainingCommits - 2018.11.02 at 00h 47m 31s.xml">
+      <configuration name="HistoryCreatorTest.testIfCustomHistoryCreatorCreatesProperHistoryForTwoTransactionsContainingCommits" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HistoryCreatorTest_testIfCustomHistoryCreatorCreatesProperHistoryForTwoTransactionsContainingCommits - 2018.11.02 at 00h 47m 50s.xml">
+      <configuration name="HistoryCreatorTest.testIfCustomHistoryCreatorCreatesProperHistoryForTwoTransactionsContainingCommits" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="creators_in_CS5570_Project - 2018.11.02 at 00h 48m 44s.xml">
+      <configuration name="creators in CS5570 Project" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_Features_in__test - 2018.11.02 at 00h 52m 49s.xml">
+      <configuration name="All Features in: test" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="All_in_CS5570_Project - 2018.11.02 at 00h 53m 02s.xml">
       <configuration name="All in CS5570 Project" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_CS5570_Project - 2018.10.09 at 12h 01m 26s.xml">
-      <configuration name="All in CS5570 Project" configurationId="JUnit" />
+    <history-entry file="creators_in_CS5570_Project - 2018.11.02 at 00h 54m 04s.xml">
+      <configuration name="creators in CS5570 Project" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_CS5570_Project - 2018.10.09 at 12h 04m 24s.xml">
-      <configuration name="All in CS5570 Project" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_CS5570_Project - 2018.10.09 at 12h 05m 52s.xml">
-      <configuration name="All in CS5570 Project" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_CS5570_Project - 2018.10.09 at 12h 05m 57s.xml">
-      <configuration name="All in CS5570 Project" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_CS5570_Project - 2018.10.09 at 12h 06m 03s.xml">
-      <configuration name="All in CS5570 Project" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_CS5570_Project - 2018.10.09 at 12h 06m 06s.xml">
-      <configuration name="All in CS5570 Project" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_CS5570_Project - 2018.10.09 at 12h 06m 09s.xml">
-      <configuration name="All in CS5570 Project" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_CS5570_Project - 2018.10.09 at 12h 06m 12s.xml">
-      <configuration name="All in CS5570 Project" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_CS5570_Project - 2018.10.10 at 15h 29m 25s.xml">
+    <history-entry file="All_in_CS5570_Project - 2018.11.02 at 00h 54m 11s.xml">
       <configuration name="All in CS5570 Project" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65002000" />
+    <option name="totallyTimeSpent" value="93644000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="Designer" order="1" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Learn" order="3" />
       <window_info id="Capture Tool" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.16767372" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.17975831" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="0" />
+      <window_info anchor="bottom" id="Terminal" order="0" weight="0.32874617" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="2" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.32874617" />
-      <window_info anchor="bottom" id="Run" order="6" weight="0.3058104" />
-      <window_info anchor="bottom" id="Debug" order="7" weight="0.46941897" />
-      <window_info active="true" anchor="bottom" id="Messages" order="8" visible="true" weight="0.32568806" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.40366971" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.36085626" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.32568806" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="11" />
@@ -514,6 +546,37 @@
       <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Image Layers" order="0" />
+      <window_info id="Designer" order="1" />
+      <window_info id="UI Designer" order="2" />
+      <window_info id="Learn" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.17975831" />
+      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="0" />
+      <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="2" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="3" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Find" order="5" weight="0.32874617" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.15443425" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.46941897" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.32568806" />
+      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="11" />
+      <window_info anchor="right" id="Capture Analysis" order="0" />
+      <window_info anchor="right" id="Theme Preview" order="1" />
+      <window_info anchor="right" id="Database" order="2" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="right" id="Maven Projects" order="4" weight="0.1978852" />
+      <window_info anchor="right" id="Palette" order="5" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -521,38 +584,21 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/components/Transaction.java</url>
+          <line>60</line>
+          <properties />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CS5570 Project.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="37" selection-start-line="1" selection-start-column="37" selection-end-line="1" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/MainTest.java" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/utils/RandomNumberGeneratorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="15" column="60" lean-forward="true" selection-start-line="15" selection-start-column="60" selection-end-line="15" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/DataItemTest.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/DataItem.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/util/Random.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="109">
@@ -571,30 +617,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
           <caret line="290" selection-start-line="290" selection-end-line="290" />
-          <folding>
-            <element signature="e#10602#10603#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/runners/BlockJUnit4ClassRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="79" selection-start-line="79" selection-end-line="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/runners/ParentRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="328" selection-start-line="328" selection-end-line="328" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
@@ -664,20 +686,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/analyzers/ACAAnalyzer.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/components/Operation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/components/HistoryTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="598">
           <caret line="26" column="42" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -695,13 +707,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/creators/HistoryCreator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/creators/OperationsCreatorTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
@@ -709,59 +714,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/creators/OperationsCreator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="70" column="56" lean-forward="true" selection-start-line="70" selection-start-column="56" selection-end-line="70" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/analyzers/ACAAnalyzer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/components/History.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/creators/TransactionCreator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="61" column="6" selection-start-line="61" selection-start-column="6" selection-end-line="63" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/components/Transaction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="62" column="6" lean-forward="true" selection-start-line="62" selection-start-column="6" selection-end-line="72" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1103#1104#0" expanded="true" />
-            <element signature="e#1135#1136#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/creators/TransactionCreatorTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="303">
           <caret line="38" column="44" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -769,19 +725,263 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
           <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Project-GUI/Project-GUI.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/sample/Main.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/javafx/Controller.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/gui/Controller.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/gui/Main.java" />
+    <entry file="file://$PROJECT_DIR$/src/gui/sample/Main.java" />
+    <entry file="file://$PROJECT_DIR$/src/gui/sample/Controller.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/analyzers/ACAAnalyzer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#359#360#0" expanded="true" />
+            <element signature="e#397#398#0" expanded="true" />
+            <element signature="e#432#433#0" expanded="true" />
+            <element signature="e#462#463#0" expanded="true" />
+            <element signature="e#509#510#0" expanded="true" />
+            <element signature="e#547#548#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/javafx/main.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/Main.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/MainGUI.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/home.fxml" />
+    <entry file="file://$PROJECT_DIR$/CS5570 Project.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="1" column="37" selection-start-line="1" selection-start-column="37" selection-end-line="1" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/components.Operation">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>components.Operation</OriginalElement>
+          <nodes>
+            <node x="0.0" y="0.0">components.Operation</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="-55.0" y="195.0" />
+          <SelectedNodes>
+            <node>components.Operation</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Constructors</Category>
+            <Category>Methods</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/components.Transaction">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>components.Transaction</OriginalElement>
+          <nodes>
+            <node x="0.0" y="0.0">components.Transaction</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="49.0" y="206.0" />
+          <SelectedNodes>
+            <node>components.Transaction</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Constructors</Category>
+            <Category>Methods</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/components.History">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>components.History</OriginalElement>
+          <nodes>
+            <node x="0.0" y="0.0">components.History</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="134.0" y="82.0" />
+          <SelectedNodes>
+            <node>components.History</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Constructors</Category>
+            <Category>Methods</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GUI/controller/Controller.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/GUI/model/StudentsModel.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/GUI/MainGUI.java" />
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="754">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/creators/OperationsCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="962">
+          <caret line="70" column="56" selection-start-line="70" selection-start-column="56" selection-end-line="70" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/creators/HistoryCreatorTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/creators/TransactionCreator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
+        <state relative-caret-position="901">
+          <caret line="61" column="100" selection-start-line="61" selection-start-column="100" selection-end-line="61" selection-end-column="100" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/exceptions/HistoryCreationException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
+          <folding>
+            <element signature="e#204#205#0" expanded="true" />
+            <element signature="e#235#236#0" expanded="true" />
+            <element signature="e#282#283#0" expanded="true" />
+            <element signature="e#311#312#0" expanded="true" />
+            <element signature="e#374#375#0" expanded="true" />
+            <element signature="e#412#413#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="1662" selection-start-line="1662" selection-end-line="1662" />
+          <folding>
+            <element signature="e#60926#60927#0" expanded="true" />
+            <element signature="e#60963#60964#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/components/Operation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="56" column="33" selection-start-line="56" selection-start-column="33" selection-end-line="56" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/runners/model/FrameworkMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+          <folding>
+            <element signature="e#1657#1658#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/java/lang/reflect/Method.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="563" selection-start-line="563" selection-end-line="563" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/jdk/internal/reflect/NativeMethodAccessorImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/runners/ParentRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="327" selection-start-line="327" selection-end-line="327" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/runners/BlockJUnit4ClassRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="79" selection-start-line="79" selection-end-line="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/components/History.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/components/Transaction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="68" column="17" selection-start-line="68" selection-start-column="17" selection-end-line="68" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/creators/HistoryCreatorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-74">
+          <caret line="37" column="56" lean-forward="true" selection-start-line="37" selection-start-column="56" selection-end-line="37" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/creators/HistoryCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
@@ -826,7 +1026,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>1.8</last-edited>
+          <last-edited>10</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -861,5 +1061,8 @@
         </settings>
       </state>
     </states>
+  </component>
+  <component name="mavenExecuteGoalHistory">
+    <option value="" />
   </component>
 </project>

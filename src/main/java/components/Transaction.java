@@ -15,12 +15,16 @@ public class Transaction {
     public Transaction(Integer txnID, HashSet<Integer> dataItems) {
         this.txnID = txnID;
         this.dataItems = dataItems;
+        createNewRandomHistory();
     }
 
-    public Transaction(Integer txnID, HashSet<Integer> dataItems, ArrayList<Operation> txnHist) {
-        this.txnID = txnID;
-        this.dataItems = dataItems;
-
+    public Transaction(Integer txnID, ArrayList<Operation> txnHist) {
+        HashSet<Integer> dataItems = new HashSet<>();
+        if(verifyAcceptableHist(txnID, txnHist, dataItems)) {
+            this.txnID = txnID;
+            this.dataItems = dataItems;
+            this.txnHist = txnHist;
+        }
     }
 
     public void createNewRandomHistory() {
@@ -38,26 +42,36 @@ public class Transaction {
         return txnHist;
     }
 
-    public void setTxnHist(ArrayList<Operation> newHist) {
-        this.txnHist = newHist;
-    }
-
     // Getters and Setters
-
     public Integer getTxnID() {
         return txnID;
     }
-
     public void setTxnID(Integer txnID) {
         this.txnID = txnID;
     }
-
     public HashSet<Integer> getDataItems() {
         return dataItems;
     }
-
     public void setDataItems(HashSet<Integer> dataItems) {
         this.dataItems = dataItems;
+    }
+
+    private boolean verifyAcceptableHist(Integer txnID, ArrayList<Operation> txnHist, HashSet<Integer> dataItems) {
+        boolean hasAbortOrCommit = false;
+        for (Operation op:txnHist) {
+            if (!hasAbortOrCommit) {
+                if (op.getOperation() == 'c' || op.getOperation() == 'a') {
+                    hasAbortOrCommit = true;
+                }
+                if (op.getDataItem() != null)
+                    dataItems.add(op.getDataItem());
+            }
+            else if (hasAbortOrCommit)
+                throw new IllegalArgumentException("Transaction with ID = " + txnID + " has operations occuring after a commit or abort.");
+
+        }
+        // If the transaction has an abort or commit and passed the above, return true;
+        return hasAbortOrCommit;
     }
 
 }
