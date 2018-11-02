@@ -2,8 +2,6 @@ package utils;
 
 import org.junit.Test;
 
-import static org.junit.Assert.*;
-
 /**
  * Created by DJ Yuhn on 10/2/2018
  */
