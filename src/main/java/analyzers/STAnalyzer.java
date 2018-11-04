@@ -1,0 +1,87 @@
+package analyzers;
+
+import components.History;
+import components.Operation;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class STAnalyzer {
+
+    private History history;
+
+    public STAnalyzer (History history) {
+        this.history = history;
+    }
+
+    public History getHistory() {
+        return history;
+    }
+
+    public void setHistory(History history) {
+        this.history = history;
+    }
+
+    public String STChecking() {
+        Map<Integer, List<Integer>> writeSet = new HashMap<>();
+        List<Integer> commitAndAbortSet = new ArrayList<>();
+        boolean flag = false;
+
+        if (history.getTxnsList().size() == 1)
+            return ("History is not ST because it only has 1 transaction");
+
+        for (Operation op : history.getHistory()) {
+            if (op.getOperation() == 'w') {
+                if (writeSet.containsKey(op.getDataItem())) {
+                    List<Integer> listWrittenToDataItem = writeSet.get(op.getDataItem());
+                    if (!listWrittenToDataItem.isEmpty()) {
+                        int lastTxnWrittenToDataItem = listWrittenToDataItem.get(listWrittenToDataItem.size() - 1);
+                        if (lastTxnWrittenToDataItem != op.getTxnID()) {
+                            if (!commitAndAbortSet.contains(lastTxnWrittenToDataItem)) {
+                                return ("History is not ST because T" + op.getTxnID() + " writes to the data item "
+                                        + op.getDataItem() + " before T" + lastTxnWrittenToDataItem + " commit or abort");
+                            } else {
+                                flag = true;
+                            }
+                        }
+                    }
+                    listWrittenToDataItem.add(op.getTxnID());
+                } else {
+                    List<Integer> listAccessedDataItem = new ArrayList<>();
+                    listAccessedDataItem.add(op.getTxnID());
+                    writeSet.put(op.getDataItem(), listAccessedDataItem);
+                }
+            }
+
+            if (op.getOperation() == 'r') {
+                if (writeSet.containsKey(op.getDataItem())) {
+                    List<Integer> listWrittenToDataItem = writeSet.get(op.getDataItem());
+                    if (!listWrittenToDataItem.isEmpty()) {
+                        int lastTxnWrittenToDataItem = listWrittenToDataItem.get(listWrittenToDataItem.size() - 1);
+                        if (lastTxnWrittenToDataItem != op.getTxnID()) {
+                            if (!commitAndAbortSet.contains(lastTxnWrittenToDataItem)) {
+                                return ("History is not ST because T" + op.getTxnID() + " reads the data item "
+                                        + op.getDataItem() + " before T" + lastTxnWrittenToDataItem + " commit or abort");
+                            } else {
+                                flag = true;
+                            }
+                        }
+                    }
+                }
+            }
+
+            if (op.getOperation() == 'c' || op.getOperation() == 'a') {
+                commitAndAbortSet.add(op.getTxnID());
+            }
+        }
+
+        if (flag)
+            return ("History is ST because all transactions can neither read or write an data item X " +
+                    "until the last transaction that wrote X has committed or aborted");
+        else
+            return ("History is not ST because no transactions read or write an data item " +
+                    "which has been written other transactions");
+    }
+}
