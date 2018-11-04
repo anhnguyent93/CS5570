@@ -14,21 +14,7 @@ import java.util.Map;
  */
 public class ACAAnalyzer {
 
-    private History history;
-
-    public ACAAnalyzer(History history) {
-        this.history = history;
-    }
-
-    public History getHistory() {
-        return history;
-    }
-
-    public void setHistory(History history) {
-        this.history = history;
-    }
-
-    public String ACAChecking() {
+    public static String ACAChecking(History history) {
         Map<Integer, List<Integer>> writeSet = new HashMap<>();
         List<Integer> commitSet = new ArrayList<>();
         boolean flag = false;

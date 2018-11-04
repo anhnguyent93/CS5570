@@ -48,8 +48,8 @@ public class HistoryCreator {
         Matcher matcher = pattern.matcher(userHistory);
 
         while (matcher.find()) {
-            String group = matcher.group();
-            System.out.println(group);
+            //String group = matcher.group();
+            //System.out.println(group);
             if (matcher.group().contains("r") || matcher.group().contains("w")) {
                 char op = matcher.group("RWOperationType").charAt(0);
                 Integer txnID = Integer.valueOf(matcher.group("TxnID"));

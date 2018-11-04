@@ -10,21 +10,7 @@ import java.util.Map;
 
 public class STAnalyzer {
 
-    private History history;
-
-    public STAnalyzer (History history) {
-        this.history = history;
-    }
-
-    public History getHistory() {
-        return history;
-    }
-
-    public void setHistory(History history) {
-        this.history = history;
-    }
-
-    public String STChecking() {
+    public static String STChecking(History history) {
         Map<Integer, List<Integer>> writeSet = new HashMap<>();
         List<Integer> commitAndAbortSet = new ArrayList<>();
         boolean flag = false;
