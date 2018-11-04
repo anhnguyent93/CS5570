@@ -6,6 +6,8 @@ import components.Transaction;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * Created by DJ Yuhn on 10/9/2018
@@ -38,48 +40,41 @@ public class HistoryCreator {
         HashMap<Integer, ArrayList<Operation>> txnsMap = new HashMap<>();
         ArrayList<Operation> opsList = new ArrayList<>();
 
-        // Acceptable operation examples: r1[1], w23[2], c1[], a2[]
-        String[] separatedOperations = userHistory.split(",");
-        for (String operation:separatedOperations) {
-            try {
-                String txnID = "";
-                String dataItem = "";
-                char op = operation.charAt(0);
-                int firstOpenBracket = operation.indexOf("[");
-                int firstClosedBracket = operation.indexOf("]");
-                if (firstOpenBracket != -1 && firstClosedBracket != -1) {
-                    txnID = operation.substring(1, firstOpenBracket);
-                    dataItem = operation.substring(firstOpenBracket + 1, firstClosedBracket);
-                } else {
-                    throw new IllegalArgumentException("The string does not contain any brackets to indicate the data item.");
-                }
+        String regex = "(?<RWOperationType>(r|w))(?<TxnID>\\d+)(\\[|\\(|\\{)(?<DataItem>\\d+)(\\]|\\)|\\})" +
+                "|(?<CAOperationType>(c|a))(?<TxnID1>\\d+)";
 
-                if (!dataItem.equals("")) {
-                    if (validOperation(op) && validTxnID(txnID) && validDataItem(dataItem)) {
-                        if (txnsMap.containsKey(Integer.valueOf(txnID))) {
-                            txnsMap.get(Integer.valueOf(txnID)).add(new Operation(Integer.valueOf(txnID), op, Integer.valueOf(dataItem)));
-                        }
-                        else {
-                            txnsMap.put(Integer.valueOf(txnID), new ArrayList<>());
-                            txnsMap.get(Integer.valueOf(txnID)).add(new Operation(Integer.valueOf(txnID), op, Integer.valueOf(dataItem)));
-                        }
-                        opsList.add(new Operation(Integer.valueOf(txnID), op, Integer.valueOf(dataItem)));
-                    }
-                } else {
-                    if (validOperation(op) && validTxnID(txnID)) {
-                        if (txnsMap.containsKey(Integer.valueOf(txnID))) {
-                            txnsMap.get(Integer.valueOf(txnID)).add(new Operation(Integer.valueOf(txnID), op));
-                        }
-                        else {
-                            txnsMap.put(Integer.valueOf(txnID), new ArrayList<>());
-                            txnsMap.get(Integer.valueOf(txnID)).add(new Operation(Integer.valueOf(txnID), op));
-                        }
-                        opsList.add(new Operation(Integer.valueOf(txnID), op));
-                    }
+        Pattern pattern = Pattern.compile(regex);
+
+        Matcher matcher = pattern.matcher(userHistory);
+
+        while (matcher.find()) {
+            //String group = matcher.group();
+            //System.out.println(group);
+            if (matcher.group().contains("r") || matcher.group().contains("w")) {
+                char op = matcher.group("RWOperationType").charAt(0);
+                Integer txnID = Integer.valueOf(matcher.group("TxnID"));
+                Integer dataItem = Integer.valueOf(matcher.group("DataItem"));
+
+                if (txnsMap.containsKey(txnID)) {
+                    txnsMap.get(txnID).add(new Operation(txnID, op, dataItem));
                 }
-            }
-            catch (IndexOutOfBoundsException ex) {
-                System.out.println("The history entered was not in an acceptable format. Be sure to include proper placement of brackets.");
+                else {
+                    txnsMap.put(txnID, new ArrayList<>());
+                    txnsMap.get(txnID).add(new Operation(txnID, op, dataItem));
+                }
+                opsList.add(new Operation(txnID, op, dataItem));
+            } else {
+                char op = matcher.group("CAOperationType").charAt(0);
+                Integer txnID = Integer.valueOf(matcher.group("TxnID1"));
+
+                if (txnsMap.containsKey(txnID)) {
+                    txnsMap.get(txnID).add(new Operation(txnID, op));
+                }
+                else {
+                    txnsMap.put(txnID, new ArrayList<>());
+                    txnsMap.get(txnID).add(new Operation(txnID, op));
+                }
+                opsList.add(new Operation(txnID, op));
             }
         }
 
@@ -91,6 +86,7 @@ public class HistoryCreator {
 
         return (new History(txnsList, opsList));
     }
+
 
     private static Boolean validOperation(char op) {
         char[] opList = {'r', 'w', 'a', 'c'};
