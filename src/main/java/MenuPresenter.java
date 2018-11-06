@@ -71,6 +71,22 @@ public class MenuPresenter {
     }
 
     private static void customHistoryMenu() {
+        Scanner userInput = new Scanner(System.in);
+
+        System.out.println("Enter your custom history:");
+        String input = userInput.nextLine();  // read the next input
+
+        try {
+            History history = HistoryCreator.createCustomHistory(input);
+
+            System.out.println(history.writeOutHistory());
+            System.out.println("Has the following: ");
+            System.out.println(ACAAnalyzer.ACAChecking(history));
+            System.out.println(STAnalyzer.STChecking(history));
+        }
+        catch (IllegalArgumentException ex) {
+            System.out.println("Something went wrong when constructing your history. Is it formatted correctly?");
+        }
 
     }
 

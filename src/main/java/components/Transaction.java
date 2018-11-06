@@ -70,6 +70,9 @@ public class Transaction {
                 throw new IllegalArgumentException("Transaction with ID = " + txnID + " has operations occuring after a commit or abort.");
 
         }
+        if (!hasAbortOrCommit)
+            throw new IllegalArgumentException("Transaction does not have a commit or abort.");
+
         // If the transaction has an abort or commit and passed the above, return true;
         return hasAbortOrCommit;
     }

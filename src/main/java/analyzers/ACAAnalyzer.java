@@ -67,8 +67,8 @@ public class ACAAnalyzer {
         }
 
         if (flag)
-            return ("History is ACA because all transaction reads those values that are written by a committed transaction");
+            return ("History is ACA because every transaction reads those values that are written by a committed transaction.");
         else
-            return ("History is not ACA because no transaction reads from other transactions");
+            return ("History is ACA because no transaction reads a data item operated on by another transaction.");
     }
 }

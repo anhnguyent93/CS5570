@@ -48,6 +48,14 @@ public class History {
 
     public ArrayList<Operation> getHistory() { return history; }
 
+    public String writeOutHistory () {
+        StringBuilder output = new StringBuilder();
+        for(Operation op: this.history) {
+            output.append(op.toString());
+        }
+        return output.toString();
+    }
+
     public ArrayList<Transaction> getTxnsList() { return txnsList; }
 
 }
