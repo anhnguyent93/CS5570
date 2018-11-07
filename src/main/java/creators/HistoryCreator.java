@@ -14,10 +14,10 @@ import java.util.regex.Pattern;
  */
 public class HistoryCreator {
     public static History createRandomHistory(int txnCount, int txnDataItemCount, int maxTxnIDs, int maxDataItemIDs) {
-        if (txnCount < maxTxnIDs)
+        if (txnCount > maxTxnIDs)
             throw new IllegalArgumentException("The number of transactions must be equal to or lower than" +
                     "the maximum possible transaction IDs");
-        if (txnDataItemCount < maxDataItemIDs)
+        if (txnDataItemCount > maxDataItemIDs)
             throw new IllegalArgumentException("The number of data items a transaction may have must be equal to " +
                     "or lower than the maximum possible data item IDs");
 
@@ -79,6 +79,9 @@ public class HistoryCreator {
         }
 
         ArrayList<Transaction> txnsList = new ArrayList<>();
+        if (txnsMap.isEmpty())
+            throw new IllegalArgumentException("Could not find valid input from your history.");
+
         for (HashMap.Entry<Integer, ArrayList<Operation>> entry : txnsMap.entrySet()) {
             Transaction txn = new Transaction(entry.getKey(), entry.getValue());
             txnsList.add(txn);
