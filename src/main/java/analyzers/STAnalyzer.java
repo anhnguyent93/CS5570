@@ -67,6 +67,6 @@ public class STAnalyzer {
             return ("History is ST because all transactions neither read or write a data item X " +
                     "until the last transaction that wrote X has committed or aborted");
         else
-            return ("History is ST because no transaction reads or writes a data item operated on by another transaction.");
+            return ("History is not ST because no transaction reads or writes a data item operated on by another transaction.");
     }
 }

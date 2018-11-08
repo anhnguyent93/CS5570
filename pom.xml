@@ -27,6 +27,11 @@
             <artifactId>jfoenix</artifactId>
             <version>9.0.4</version>
         </dependency>
+        <dependency>
+            <groupId>org.jgrapht</groupId>
+            <artifactId>jgrapht-core</artifactId>
+            <version>1.0.1</version>
+        </dependency>
     </dependencies>
 
     <build>
