@@ -26,7 +26,6 @@ public class HistoryCreator {
 
         for (Integer txnID:txnIDs) {
             Transaction txn = TransactionCreator.createTransactionWithDataItems(txnID, txnDataItemCount, maxDataItemIDs);
-            txn.createNewRandomHistory();
             txns.add(txn);
         }
 
